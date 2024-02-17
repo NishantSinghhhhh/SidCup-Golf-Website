@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 145px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    padding: 0 150px; /* Corrected the padding property */
+    justify-content: flex-start;
+    gap: 45px;
+    z-index: 99;
+}
+
+#nav img {
+    height: 75px;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#content-container {
+    width: 100%; /* Set the width of the content container to 100% */
+    max-width: 1200px; /* You can adjust the max-width based on your design */
+    margin: 0 auto; /* Center the content container horizontally */
+}
+
+#page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+}
+
+#page1 h1::before {
+    content: "EAT.DRINK.PLAY";
+    position: absolute;
+    color: black;
+    top:-6px;
+    left: -6px;
+    -webkit-text-stroke: 1px #95C11E;
+    z-index: -1;
+}
+
+#page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#page1 p {
+    font-size: 20px;
+    font-weight: 500;
+    width: 40%;
+    z-index: 10;
+}
+
+#page2{
+    height: 100vh;
+    width: 100vh;
+    z-index: 10
+    ;
+}
+
+#cursor {
+    height: 200px; /* Adjust the height to increase the size */
+    width: 200px; /* Adjust the width to increase the size */
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    filter: blur(100px); /* You can adjust the blur value if needed */
+}
+
+
+
+#cursor-blur{
+    height: 300px;
+    width: 300px;
+    background-color: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    filter: blur(100px);
+
+}
